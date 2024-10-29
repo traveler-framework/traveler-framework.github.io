@@ -170,7 +170,7 @@
       </p>
     </div>
     <!-- overview -->
-    
+    <br>
     <!-- framework -->
     <div class="column is-full-width">
       <h2 class="title is-4">Framework</h2>
@@ -186,7 +186,11 @@
       </p>
     </div>
     <!-- framework -->
+  </div>
+</section>
 
+<section class="section">
+  <div class="container is-max-desktop">
     <!-- results -->
     <div class="columns is-centered">
       <div class="column is-full-width">
@@ -196,25 +200,27 @@
         <h3 class="title is-4">Benchmarks</h3>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            TraveLER achieves state-of-the-art (SOTA) zero-shot results on a variety of VideoQA datasets, including NExT-QA, EgoSchema, STAR, and Perception Test. Our method often outperforms other approaches despite viewing fewer frames on average, or outperforms some fine-tuned approaches even when our method is zero-shot.
           </p>
         </div>
         <img src="./static/images/results.png">
-        <br/>
         <!--/ benchmarks -->
-        
+        <br>
+        <br>
         <!--/ ablations -->
-        <h3 class="title is-4">Ablation</h3>
+        <h3 class="title is-4">Ablations</h3>
         <div class="content has-text-justified">
           <p>
-            We can also animate the scene by interpolating the deformation latent codes of two input
-            frames. Use the slider here to linearly interpolate between the left frame and the right
-            frame.
+            Our modular approach has the benefit of allowing us to easily swap in different LLMs and LMMs. We perform ablations on 1000 randomly selected questions from the NExT-QA training set.
           </p>
         </div>
         <img src="./static/images/ablation.png">
+        <br><br>
+        <div class="content has-text-justified">
+          <p>
+            We report (a), (b) replacing different LLMs and LMMs, (c) selecting different numbers of frames to view in the Retriever, and (d) changing the number of questions asked in the Extractor. For these ablations, we use GPT-3.5/LLaVA-1.6 as the LLM/LMM, 5 frames for the Retriever, and 3 questions for the Extractor, unless otherwise specified.
+          </p>
+        </div>
         <br/>
         <!--/ ablations -->
 
