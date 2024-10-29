@@ -201,14 +201,14 @@
         <h3 class="title is-4">Ablations</h3>
         <div class="content has-text-justified">
           <p>
-            Our modular approach has the benefit of allowing us to easily swap in different LLMs and LMMs. We perform ablations on 1000 randomly selected questions from the NExT-QA training set.
+            Our modular approach has the benefit of allowing us to easily swap in different LLMs and LMMs. We perform ablations on 1000 randomly selected questions from the NExT-QA training set. We report (a), (b) replacing different LLMs and LMMs, (c) selecting different numbers of frames to view in the Retriever, and (d) changing the number of questions asked in the Extractor.
           </p>
         </div>
         <img src="./static/images/ablation.png">
         <br><br>
         <div class="content has-text-justified">
           <p>
-            We report (a), (b) replacing different LLMs and LMMs, (c) selecting different numbers of frames to view in the Retriever, and (d) changing the number of questions asked in the Extractor. For these ablations, we use GPT-3.5/LLaVA-1.6 as the LLM/LMM, 5 frames for the Retriever, and 3 questions for the Extractor, unless otherwise specified.
+            We find that the performance of TraveLER improves as we swap in more sophisticated LLMs and LMMs, and we expect this trend to continue for future models. We discover that the optimal settings for the Retriever is to view a window of 5 frames each iteration, and for the Extractor to ask 3 questions at a time.
           </p>
         </div>
         <br/>
