@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+        content="TraveLER can traverse, locate, evaluate, and replan to answer questions about videos.">
   <meta name="keywords" content="TraveLER, LLM, Agents, Videos">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TraveLER: A Modular Multi-LMM Agent Framework for Video Question-Answering</title>
@@ -26,8 +26,8 @@
         rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <!-- <link rel="stylesheet" href="./static/css/bulma-carousel.min.css"> -->
+  <!-- <link rel="stylesheet" href="./static/css/bulma-slider.min.css"> -->
   <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
@@ -135,18 +135,6 @@
 
 <section class="section">
   <div class="container is-max-desktop">
-
-    <!-- Paper video. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <div class="publication-video">
-          <iframe src="https://www.youtube.com/embed/n_KGHYOE77w?si=oILiUOvHEmPjmz9D?&autoplay=1&mute=1"
-                  frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Paper video. -->
-
     <!-- Abstract. -->
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
@@ -159,7 +147,6 @@
       </div>
     </div>
     <!--/ Abstract. -->
-
   </div>
 </section>
 
@@ -234,35 +221,6 @@
       </div>
     </div>
     <!--/ results -->
-
-
-    <!-- Concurrent Work. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Work</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
 
@@ -295,8 +253,7 @@
       <div class="column is-8">
         <div class="content">
           <p>
-            Website code borrowed from <a
-              href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
+            Website code borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies</a>.
           </p>
         </div>
       </div>
